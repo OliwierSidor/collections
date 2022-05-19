@@ -28,7 +28,7 @@ public class Main {
         System.out.println("-----------------------------------------------------------------------------------------");
 
         for (int i = 0; i < lista.size(); i++) {
-            Plec plec = lista.get(i).plec;
+            Plec plec = lista.get(i).getPlec();
             if (plec.equals(Plec.KOBIETA)) {
                 System.out.println("Kobiety: " + lista.get(i));
 
@@ -39,7 +39,7 @@ public class Main {
         }
         System.out.println("-----------------------------------------------------------------------------------------");
         for (StudentZadanie5 studentZadanie5 : lista) {
-            String indeks = studentZadanie5.numerIndeksu;
+            String indeks = studentZadanie5.getNumerIndeksu();
             System.out.println("Numery indeksow: " + indeks);
         }
 

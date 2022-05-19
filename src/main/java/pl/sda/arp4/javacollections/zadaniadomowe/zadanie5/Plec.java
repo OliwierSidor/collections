@@ -6,13 +6,6 @@ public enum Plec {
 
     String nazwa;
 
-    @Override
-    public String toString() {
-        return "Plec{" +
-                "nazwa='" + nazwa + '\'' +
-                '}';
-    }
-
     Plec (String nazwa){
         this.nazwa = nazwa;
     }

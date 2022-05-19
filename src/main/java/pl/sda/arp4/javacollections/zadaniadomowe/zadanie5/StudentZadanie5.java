@@ -1,10 +1,19 @@
 package pl.sda.arp4.javacollections.zadaniadomowe.zadanie5;
 
 public class StudentZadanie5 {
-    protected String numerIndeksu;
-    protected String imie;
-    protected String naziwsko;
-    protected Plec plec;
+    private String numerIndeksu;
+    private String imie;
+    private String naziwsko;
+
+    public String getNumerIndeksu() {
+        return numerIndeksu;
+    }
+
+    public Plec getPlec() {
+        return plec;
+    }
+
+    private Plec plec;
 
     public StudentZadanie5(String imie, String naziwsko, String numerIndeksu, Plec plec) {
         this.numerIndeksu = numerIndeksu;

@@ -25,18 +25,25 @@ public class Main {
         for (StudentZadanie5 student : lista) {
             System.out.println(student);
         }
-        System.out.println("-----------------------------------------------------------------------------------------");
-
+        System.out.println("Kobiety-----------------------------------------------------------------------------------------");
         for (int i = 0; i < lista.size(); i++) {
+            StudentZadanie5 studentZadanie5 = lista.get(i);
             Plec plec = lista.get(i).getPlec();
             if (plec.equals(Plec.KOBIETA)) {
-                System.out.println("Kobiety: " + lista.get(i));
+                System.out.println(studentZadanie5);
+            }
+        }
+        System.out.println("Mężczyźni-----------------------------------------------------------------------------------------");
 
-            } else if (plec.equals(Plec.MEZCZYZNA)) {
-                System.out.println("Mężczyźni: " + lista.get(i));
+        for (int i = 0; i < lista.size(); i++) {
+            StudentZadanie5 studentZadanie5 = lista.get(i);
+            Plec plec = lista.get(i).getPlec();
+            if (plec.equals(plec.MEZCZYZNA)) {
+                System.out.println(studentZadanie5);
 
             }
         }
+
         System.out.println("-----------------------------------------------------------------------------------------");
         for (StudentZadanie5 studentZadanie5 : lista) {
             String indeks = studentZadanie5.getNumerIndeksu();
